@@ -93,9 +93,9 @@ public class BasicNetwork implements Network {
                 addCacheHeaders(headers, request.getCacheEntry());
                 httpResponse = mHttpStack.performRequest(request, headers);
                 Header[] header_test=httpResponse.getAllHeaders();
-                for (int i = 0; i < header_test.length; i++) {
-	    			Log.d("GEORGEI_VOLLEY",header_test[i].getName() + " - " +header_test[i].getValue());
-	            }
+//                for (int i = 0; i < header_test.length; i++) {
+//	    			Log.d("GEORGEI_VOLLEY",header_test[i].getName() + " - " +header_test[i].getValue());
+//	            }
                 StatusLine statusLine = httpResponse.getStatusLine();
                 int statusCode = statusLine.getStatusCode();
 
